@@ -4,9 +4,12 @@
 * CdProduct存在独有的获取播放时长的操作；
 * BookProduct存在独有的获取页数的操作。
 
+### UML类图
 ![未命名文件.png-30.9kB][1]
 
+### 代码描述
 ```php
+<?php
 //商品类
 class ShopProduct 
 {
@@ -133,6 +136,15 @@ $BookProduct = new $BookProduct("Alex", "Pierre", "Lemaitre", 59, 416);
 $BookProduct->getSummaryLine();
 $BookProduct->getNumberOfPages();
 ```
+
+### 小结
+#### 属性的访问权限确定
+* 先将其置为private，置为最严格的权限；
+* 考虑是否子类需要使用该属性，需要使用则修改权限为protected；
+* 考虑外部对象是否需要使用该属性，需要使用则修改权限为public或者保留private权限增加获得器。
+
+#### 方法的访问权限确定
+* 总体思路与属性一致，区别在于外部对象如果需要使用该方法，则该方法的访问权限应该置为public。
 
 
    [1]: http://static.zybuluo.com/Minc0/59z06zxi8uszae09a08zpt92/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6.png
