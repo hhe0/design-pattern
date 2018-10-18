@@ -255,5 +255,59 @@ print "{$seminar->cost()} ({$seminar->chargeType()})\n";
 #### 小结
 * 使用策略模式通过组合而非继承可以很好的解决这个问题。
 
+### 扩展功能
+```php
+class RegistrationMgr
+{
+    function register(Lesson $lesson)
+    {
+        // 处理该课程
+
+        // 通知某人
+
+        $notifier = Notifier::getNotifier();
+
+        $notifier->inform("new lesson: cost  ({$lesson->cost()})");
+    }
+}
+
+abstract class Notifier
+{
+    static function getNotifier()
+    {
+        // 根据配置或其他逻辑获得具体的类
+
+        if (rand(1, 2) == 1)
+        {
+            return new MailNotifier();
+        } else {
+            return new TextNotifier();
+        }
+    }
+
+    abstract function inform($message);
+}
+
+class MailNotifier extends Notifier
+{
+    function inform($message)
+    {
+        print "MAIL notification: {$message}\n";
+    }
+}
+
+class TextNotifier extends Notifier
+{
+    function inform($message)
+    {
+        print "TEXT notification: {$message}\n";
+    }
+}
+
+$lesson = new Seminar(4, new TimedCostStrategy());
+$mgr = new RegistrationMgr();
+$mgr->register($lesson);
+```
+
   [1]: http://static.zybuluo.com/Minc0/9i7hf9c3ey0gn7dabitj8ppy/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%20%281%29.png
   [2]: http://static.zybuluo.com/Minc0/rbbe79xwg9j72zi50y902luw/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B6%20%282%29.png
