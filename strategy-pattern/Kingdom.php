@@ -8,7 +8,7 @@ abstract class Character
         $this->weaponBehavior = $weaponBehavior;
     }
 
-    public function performFight() 
+    public function performFight()
     {
         $this->weaponBehavior->fight();
     }
