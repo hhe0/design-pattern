@@ -1,3 +1,6 @@
-# 设计模式
-* 包含面向对象的一些基础知识以及经典的设计模式；
-* 部分代码改写自《HeadFirst 设计模式》中提供的Java代码。
+## 设计模式
+* <a href="https://github.com/hhe0/design-pattern/tree/master/strategy-pattern">策略模式</a>
+
+## 参考资料
+* 《HeadFirst 设计模式》
+* 《深入PHP 面向对象、模式与实践》
