@@ -1,4 +1,7 @@
 <?php
+/**
+ * 程序员类
+*/
 class Programmer
 {
     protected $programBehavior;
@@ -14,6 +17,9 @@ class Programmer
     }
 }
 
+/**
+ * 封装编程行为
+*/
 interface ProgramBehavior
 {
     public function programming();
