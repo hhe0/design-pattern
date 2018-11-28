@@ -1,4 +1,5 @@
 <?php
+namespace Kingdom;
 /**
  * 角色类
 */
