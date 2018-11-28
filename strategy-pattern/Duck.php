@@ -1,4 +1,7 @@
 <?php
+/**
+ * Duck抽象类
+*/
 abstract class Duck
 {
     protected $quackBehavior;
@@ -14,10 +17,9 @@ abstract class Duck
     }
 
     public abstract function fly();
-
 }
 /**
- * 鸭子叫的行为
+ * 封装鸭子叫的行为
 */
 interface QuackBehavior
 {
@@ -72,11 +74,11 @@ class SqueakDuck extends Duck
 
 $mullDuck = new MullDuck(new MuteQuack());
 $mullDuck->performQuack();
-
+$mullDuck->fly();
 
 $squeakDuck = new SqueakDuck(new Squeak());
 $squeakDuck->performQuack();
-
+$squeakDuck->fly();
 
 
 

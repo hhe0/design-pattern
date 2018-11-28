@@ -1,4 +1,7 @@
 <?php
+/**
+ * 角色类
+*/
 abstract class Character
 {
     protected $weaponBehavior;
@@ -12,7 +15,14 @@ abstract class Character
     {
         $this->weaponBehavior->fight();
     }
+}
 
+class King extends Character
+{
+    public function __construct(SwordBehavior $weaponBehavior)
+    {
+        parent::__construct($weaponBehavior);
+    }
 }
 
 class Queen extends Character
@@ -23,15 +33,8 @@ class Queen extends Character
     }
 }
 
-class King extends Character
-{
-    public function __construct(BowAndArrowBehavior $weaponBehavior)
-    {
-        parent::__construct($weaponBehavior);
-    }
-}
 
-class Troll extends Character
+class Knight extends Character
 {
     public function __construct(AxeBehavior $weaponBehavior)
     {
@@ -39,14 +42,17 @@ class Troll extends Character
     }
 }
 
-class Knight extends Character
+class Troll extends Character
 {
-    public function __construct(SwordBehavior $weaponBehavior)
+    public function __construct(BowAndArrowBehavior $weaponBehavior)
     {
         parent::__construct($weaponBehavior);
     }
 }
 
+/**
+ * 封装使用武器的行为
+*/
 interface WeaponBehavior
 {
     public function fight();
@@ -56,7 +62,7 @@ class KnifeBehavior implements WeaponBehavior
 {
     public function fight()
     {
-        echo 'fight with knife.' . "\n";
+        echo 'Fight with knife.' . "\n";
     }
 }
 
@@ -64,7 +70,7 @@ class BowAndArrowBehavior implements WeaponBehavior
 {
     public function fight()
     {
-        echo 'fight with bow-and-arrow.' . "\n";
+        echo 'Fight with bow-and-arrow.' . "\n";
     }
 }
 
@@ -72,7 +78,7 @@ class AxeBehavior implements WeaponBehavior
 {
     public function fight()
     {
-        echo 'fight with axe.' . "\n";
+        echo 'Fight with axe.' . "\n";
     }
 }
 
@@ -80,18 +86,20 @@ class SwordBehavior implements WeaponBehavior
 {
     public function fight()
     {
-        echo 'fight with sword.' . "\n";
+        echo 'Fight with sword.' . "\n";
     }
 }
+
+
+$king = new King(new SwordBehavior());
+$king->performFight();
 
 $queen = new Queen(new KnifeBehavior());
 $queen->performFight();
 
-$king = new King(new BowAndArrowBehavior());
-$king->performFight();
+$knight = new Knight(new AxeBehavior());
+$knight->performFight();
 
-$troll = new Troll(new AxeBehavior());
+$troll = new Troll(new BowAndArrowBehavior());
 $troll->performFight();
 
-$knight = new Knight(new SwordBehavior());
-$knight->performFight();
