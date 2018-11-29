@@ -1,5 +1,6 @@
 <?php
 namespace Duck;
+
 /**
  * Duck抽象类
 */
