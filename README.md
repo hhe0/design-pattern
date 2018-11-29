@@ -1,6 +1,19 @@
 ## 设计模式
+
+### 行为型模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/strategy-pattern">策略模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/observer-pattern">观察者模式</a>
+* 访问者模式
+* 命令模式
+
+### 创建型模式
+* 单例模式
+* 工厂模式
+
+### 结构型模式
+* 组合模式
+* 装饰模式
+* 外观模式
 
 ## 说明
 * 抽时间会为程序代码添加`UML类图`方便理解；

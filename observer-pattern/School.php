@@ -60,7 +60,6 @@ class Student implements Observer
     {
         echo 'Student go home.' . "\n";
     }
-
 }
 
 /**
