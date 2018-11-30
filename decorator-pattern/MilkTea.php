@@ -67,7 +67,7 @@ class Coconut extends Excipient
 {
     public function getCost()
     {
-        return  $this->milkTea->getCost() + 1;
+        return  $this->milkTea->getCost() + 1.0;
     }
 }
 
