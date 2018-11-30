@@ -52,7 +52,7 @@ class Matcha extends Excipient
 /**
  * 珍珠
 */
-class Perl extends Excipient
+class Pearl extends Excipient
 {
     public function getCost()
     {
@@ -73,7 +73,7 @@ class Coconut extends Excipient
 
 
 // 一杯基础款的奶茶 + 抹茶 + 珍珠
-$teaA = new Perl(new Matcha(new BasicMilkTea()));
+$teaA = new Pearl(new Matcha(new BasicMilkTea()));
 $costA = $teaA->getCost();
 echo 'It costs: ' . $costA . "\n";
 
