@@ -5,15 +5,15 @@
 * 一个行为如果被多个类所共有，如何处理？
 
 ### 代码示例
-#### Duck.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/strategy-pattern/Duck.php">Duck.php</a>
 * 有很多种不同的鸭子；
 * 每种不同的鸭子的叫声不同，或者根本不会叫。
 
-#### Kingdom.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/strategy-pattern/Kingdom.php">Kingdom.php</a>
 * 在王国里存在国王、王后、骑士、troll（不知道怎么翻译）；
 * 不同的任务角色具有不同的战斗方式。
 
-#### Programmer.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/strategy-pattern/Programmer.php">Programmer.php</a>
 * 存在使用不同编程语言的程序员，例如：PHP程序员、JAVA程序员、C程序员；
 * 每种程序员编程时使用的语言不同。
 

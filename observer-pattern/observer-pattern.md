@@ -5,13 +5,13 @@
 * 如果新增新的观察者，必须更改主题类，不方便扩充。
 
 ### 代码示例
-#### Family.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/observer-pattern/Family.php">Family.php</a>
 * 爸爸通知家庭成员妈妈、儿子以及女儿一起吃饭。
 
-#### Meeting.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/observer-pattern/Meeting.php">Meeting.php</a>
 * 老板通知程序员、PM以及UI一起开会。
 
-#### School.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/observer-pattern/School.php">School.php</a>
 * 放学打铃通知老师、学生以及校长放学。
 
 ### 总结与反思

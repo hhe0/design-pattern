@@ -5,13 +5,13 @@
 * 装饰模式以对客户透明的方式动态地给一个对象附加上更多的责任，换言之，客户端并不会觉得对象在装饰前和装饰后有什么不同。装饰模式可以在不需要创造更多子类的情况下，将对象的功能加以扩展。这就是装饰模式的模式动机。
 
 ### 代码示例
-#### MilkTea.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/decorator-pattern/MilkTea.php">MilkTea.php</a>
 * 一杯奶茶可以加抹茶、珍珠、椰果，计算其价格。
 
-#### Transform.php
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/decorator-pattern/Transform.php">Transform.php</a>
 * 汽车人可以变为机器人或者飞行器。
 
-### Shape.php
+### <a href="https://github.com/hhe0/design-pattern/blob/master/decorator-pattern/Shape.php">Shape.php</a>
 * 存在大圆和小圆。
 
 ### 总结与反思
