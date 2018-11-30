@@ -6,8 +6,8 @@ namespace MilkTea;
 */
 class MilkTea
 {
-    public $decorator = [];
-    public $cost = 0;
+    protected $decorator = [];
+    private $cost = 0;
 
     public function addDecorator(Decorator $decorator)
     {
@@ -22,6 +22,18 @@ class MilkTea
         }
 
         echo 'It costs '. $this->cost . ".\n";
+    }
+}
+
+/**
+ * 奶茶套餐
+*/
+class Package extends MilkTea
+{
+    public function __construct()
+    {
+        $this->decorator[] = new Hot();
+        $this->decorator[] = new Large();
     }
 }
 
@@ -51,7 +63,7 @@ abstract class Heat implements Decorator
 */
 class Hot extends Heat
 {
-    public $cost = 0.1;
+    public $cost = 0.3;
 }
 
 /**
@@ -67,7 +79,7 @@ class Warm extends Heat
 */
 class Cold extends Heat
 {
-    public $cost = 0.3;
+    public $cost = 0.1;
 }
 
 /**
@@ -122,3 +134,8 @@ $milkTea->addDecorator(new Medium());
 $milkTea->addDecorator(new Hot());
 
 $milkTea->cost();
+
+// 来份套餐
+$package = new Package();
+
+$package->cost();
