@@ -26,18 +26,6 @@ class MilkTea
 }
 
 /**
- * 奶茶套餐
-*/
-class Package extends MilkTea
-{
-    public function __construct()
-    {
-        $this->decorator[] = new Hot();
-        $this->decorator[] = new Large();
-    }
-}
-
-/**
  * 装饰器接口
 */
 interface Decorator
@@ -117,6 +105,18 @@ class Medium extends Volume
 class Small extends Volume
 {
     public $cost = 10;
+}
+
+/**
+ * 奶茶套餐
+ */
+class Package extends MilkTea
+{
+    public function __construct()
+    {
+        $this->decorator[] = new Hot();
+        $this->decorator[] = new Large();
+    }
 }
 
 // 一份大杯、冷的奶茶
