@@ -4,7 +4,7 @@ namespace Programmer;
 /**
  * 程序员类
 */
-class Programmer
+abstract class Programmer
 {
     protected $programBehavior;
 
@@ -83,6 +83,7 @@ class DataProgrammer extends Programmer
 //        parent::__construct($programBehavior);
 //    }
 }
+
 
 $phpProgrammer = new PhpProgrammer(new PhpProgramming());
 $phpProgrammer->performProgramming();

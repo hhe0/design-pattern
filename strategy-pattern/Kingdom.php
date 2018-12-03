@@ -21,30 +21,13 @@ abstract class Character
 
 class King extends Character
 {
-    public function __construct(SwordBehavior $weaponBehavior)
-    {
-        parent::__construct($weaponBehavior);
-    }
-}
-
-class Queen extends Character
-{
     public function __construct(KnifeBehavior $weaponBehavior)
     {
         parent::__construct($weaponBehavior);
     }
 }
 
-
-class Knight extends Character
-{
-    public function __construct(AxeBehavior $weaponBehavior)
-    {
-        parent::__construct($weaponBehavior);
-    }
-}
-
-class Troll extends Character
+class Queen extends Character
 {
     public function __construct(BowAndArrowBehavior $weaponBehavior)
     {
@@ -76,32 +59,9 @@ class BowAndArrowBehavior implements WeaponBehavior
     }
 }
 
-class AxeBehavior implements WeaponBehavior
-{
-    public function fight()
-    {
-        echo 'Fight with axe.' . "\n";
-    }
-}
 
-class SwordBehavior implements WeaponBehavior
-{
-    public function fight()
-    {
-        echo 'Fight with sword.' . "\n";
-    }
-}
-
-
-$king = new King(new SwordBehavior());
+$king = new King(new KnifeBehavior());
 $king->performFight();
 
-$queen = new Queen(new KnifeBehavior());
+$queen = new Queen(new BowAndArrowBehavior());
 $queen->performFight();
-
-$knight = new Knight(new AxeBehavior());
-$knight->performFight();
-
-$troll = new Troll(new BowAndArrowBehavior());
-$troll->performFight();
-

@@ -47,8 +47,6 @@ class Squeak implements QuackBehavior
 
 class MullDuck extends Duck
 {
-    protected $quackBehavior;
-
     public function __construct(MuteQuack $muteQuack)
     {
         parent::__construct($muteQuack);
@@ -62,8 +60,6 @@ class MullDuck extends Duck
 
 class SqueakDuck extends Duck
 {
-    protected $quackBehavior;
-
     public function __construct(Squeak $quackBehavior)
     {
         parent::__construct($quackBehavior);
@@ -74,6 +70,7 @@ class SqueakDuck extends Duck
         echo 'SqueakDuck fly.' . "\n";
     }
 }
+
 
 $mullDuck = new MullDuck(new MuteQuack());
 $mullDuck->performQuack();
