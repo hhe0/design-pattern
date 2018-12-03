@@ -1,11 +1,17 @@
 <?php
 namespace juicer;
 
+/**
+ * 饮料机接口
+*/
 interface Juicer
 {
     public static function getJuice();
 }
 
+/**
+ * 橙汁饮料机
+*/
 class OrangeJuicer implements Juicer
 {
     public static function getJuice()
@@ -14,6 +20,9 @@ class OrangeJuicer implements Juicer
     }
 }
 
+/**
+ * 葡萄汁饮料机
+*/
 class GrapeJuicer implements Juicer
 {
     public static function getJuice()
@@ -22,6 +31,9 @@ class GrapeJuicer implements Juicer
     }
 }
 
+/**
+ * 果汁
+*/
 abstract class Juice
 {
     public function getDescription()
@@ -30,6 +42,9 @@ abstract class Juice
     }
 }
 
+/**
+ * 橙汁
+*/
 class OrangeJuice extends Juice
 {
     public function getDescription()
@@ -38,6 +53,9 @@ class OrangeJuice extends Juice
     }
 }
 
+/**
+ * 葡萄汁
+*/
 class GrapeJuice extends Juice
 {
     public function getDescription()

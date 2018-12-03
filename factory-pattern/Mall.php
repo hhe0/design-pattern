@@ -1,11 +1,17 @@
 <?php
 namespace mall;
 
+/**
+ * 商店
+*/
 abstract class Shop
 {
     public abstract function getName();
 }
 
+/**
+ * 食品店
+*/
 class FoodShop extends Shop
 {
     public static function getEgg()
@@ -24,6 +30,9 @@ class FoodShop extends Shop
     }
 }
 
+/**
+ * 服装店
+*/
 class ClothesShop extends Shop
 {
     public static function getHat()
@@ -42,11 +51,17 @@ class ClothesShop extends Shop
     }
 }
 
+/**
+ * 食物
+*/
 interface FoodProduct
 {
     public function eat();
 }
 
+/**
+ * 鸡蛋
+*/
 class Egg implements FoodProduct
 {
     public function eat()
@@ -55,6 +70,9 @@ class Egg implements FoodProduct
     }
 }
 
+/**
+ * 牛奶
+*/
 class Milk implements FoodProduct
 {
     public function eat()
@@ -63,11 +81,17 @@ class Milk implements FoodProduct
     }
 }
 
+/**
+ * 服装
+*/
 interface ClothesProduct
 {
     public function wear();
 }
 
+/**
+ * 帽子
+*/
 class Hat implements ClothesProduct
 {
     public function wear()
@@ -76,6 +100,9 @@ class Hat implements ClothesProduct
     }
 }
 
+/**
+ * 鞋子
+*/
 class Shoes implements ClothesProduct
 {
     public function wear()

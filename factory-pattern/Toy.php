@@ -1,6 +1,9 @@
 <?php
 namespace toy;
 
+/**
+ * 玩具工厂
+*/
 class ToyFactory
 {
     const TRANSFORMER = 1;
@@ -27,11 +30,17 @@ class ToyFactory
     }
 }
 
+/**
+ * 玩具
+*/
 interface Toy
 {
     public function getDescription();
 }
 
+/**
+ * 变形金刚
+*/
 class Transformer implements Toy
 {
     public function getDescription()
@@ -40,6 +49,9 @@ class Transformer implements Toy
     }
 }
 
+/**
+ * 芭比娃娃
+*/
 class Barbie implements Toy
 {
     public function getDescription()
@@ -48,6 +60,9 @@ class Barbie implements Toy
     }
 }
 
+/**
+ * 瓦力
+*/
 class Wali implements Toy
 {
     public function getDescription()
