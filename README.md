@@ -15,8 +15,8 @@
 * <a href="https://github.com/hhe0/design-pattern/tree/master/decorator-pattern">装饰器模式</a>
 * 外观模式
 
-## 运行方式
-* 在命令行下切换到相应的目录执行，例如：`php Duck.php`。
+## 运行
+* 在命令行下切换到相应的目录下输入命令，例如：`php Duck.php`，回车后即运行脚本。
 
 ## 说明
 * 抽时间会为程序代码添加`UML类图`方便理解；
