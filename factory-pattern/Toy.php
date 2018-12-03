@@ -3,21 +3,25 @@ namespace toy;
 
 class ToyFactory
 {
+    const TRANSFORMER = 1;
+    const BARBIE = 2;
+    const WALI = 3;
+
     public static function produceToy($toyName)
     {
         switch($toyName)
         {
-            case 'transformer':
+            case self::TRANSFORMER:
                 return new Transformer();
                 break;
-            case 'barbie':
+            case self::BARBIE:
                 return new Barbie();
                 break;
-            case 'wali':
+            case self::WALI:
                 return new Wali();
                 break;
             default:
-                throw new \Exception('Unknown toy name!');
+                throw new \InvalidArgumentException('Unknown toy name!');
                 break;
         }
     }
@@ -53,12 +57,12 @@ class Wali implements Toy
 }
 
 
-$transform = ToyFactory::produceToy('transformer');
+$transform = ToyFactory::produceToy(ToyFactory::TRANSFORMER);
 $transform->getDescription();
 
-$barbie = ToyFactory::produceToy('barbie');
+$barbie = ToyFactory::produceToy(ToyFactory::BARBIE);
 $barbie->getDescription();
 
-$wali = ToyFactory::produceToy('wali');
+$wali = ToyFactory::produceToy(ToyFactory::WALI);
 $wali->getDescription();
 
