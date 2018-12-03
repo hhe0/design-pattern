@@ -77,6 +77,7 @@ class CProgrammer extends Programmer
 
 class DataProgrammer extends Programmer
 {
+    // 如果使用该构造方法，则会限制该DataProgrammer的行为
 //    public function __construct(CProgramming $programBehavior)
 //    {
 //        parent::__construct($programBehavior);
