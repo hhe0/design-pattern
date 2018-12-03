@@ -8,7 +8,7 @@ class Programmer
 {
     protected $programBehavior;
 
-    protected function __construct(programBehavior $programBehavior)
+    public function __construct(programBehavior $programBehavior)
     {
         $this->programBehavior = $programBehavior;
     }
@@ -77,10 +77,10 @@ class CProgrammer extends Programmer
 
 class DataProgrammer extends Programmer
 {
-    public function __construct(CProgramming $programBehavior)
-    {
-        parent::__construct($programBehavior);
-    }
+//    public function __construct(CProgramming $programBehavior)
+//    {
+//        parent::__construct($programBehavior);
+//    }
 }
 
 $phpProgrammer = new PhpProgrammer(new PhpProgramming());
@@ -93,5 +93,8 @@ $cProgrammer = new CProgrammer(new CProgramming());
 $cProgrammer->performProgramming();
 
 $dataProgrammer = new DataProgrammer(new CProgramming());
+$dataProgrammer->performProgramming();
+
+$dataProgrammer = new DataProgrammer(new JavaProgramming());
 $dataProgrammer->performProgramming();
 

@@ -8,7 +8,7 @@ abstract class Character
 {
     protected $weaponBehavior;
 
-    protected function __construct(WeaponBehavior $weaponBehavior)
+    public function __construct(WeaponBehavior $weaponBehavior)
     {
         $this->weaponBehavior = $weaponBehavior;
     }

@@ -8,6 +8,7 @@ abstract class Duck
 {
     protected $quackBehavior;
 
+    // 这个地方使用public更好，方便进行扩展
     public function __construct(QuackBehavior $quackBehavior)
     {
         $this->quackBehavior = $quackBehavior;
