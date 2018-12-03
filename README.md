@@ -8,7 +8,7 @@
 
 ### 创建型模式
 * 单例模式
-* <a href="<a href="https://github.com/hhe0/design-pattern/tree/master/factory-pattern">">工厂模式</a>
+* <a href="https://github.com/hhe0/design-pattern/tree/master/factory-pattern">工厂模式</a>
 
 ### 结构型模式
 * 组合模式
