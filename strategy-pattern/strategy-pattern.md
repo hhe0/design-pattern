@@ -12,14 +12,15 @@
 ![未命名文件.png-25.6kB][1]
 
 #### <a href="https://github.com/hhe0/design-pattern/blob/master/strategy-pattern/Kingdom.php">Kingdom.php</a>
-* 在王国里存在国王、王后、骑士、troll（不知道怎么翻译）；
+* 在王国里存在国王、王后；
 * 不同的任务角色具有不同的战斗方式。
 
 ![未命名文件.png-25.6kB][2]
 
 #### <a href="https://github.com/hhe0/design-pattern/blob/master/strategy-pattern/Programmer.php">Programmer.php</a>
-* 存在使用不同编程语言的程序员，例如：PHP程序员、JAVA程序员、C程序员；
-* 每种程序员编程时使用的语言不同。
+* 存在使用不同编程语言的程序员，例如：PHP程序员、JAVA程序员、C程序员以及数据程序员；
+* 每种程序员编程时使用的语言不同；
+* 数据程序员可能使用JAVA、C、PHP等语言。
 
 ![未命名文件.png-32.6kB][3]
 
