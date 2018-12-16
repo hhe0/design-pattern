@@ -5,7 +5,7 @@
 
 ### 代码示例
 
-#### <a href="">Remote.php</a>
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/command-pattern/Remote.php">Remote.php</a>
 * 有一个遥控器；
 * 遥控器上开灯按钮/关灯按钮；
 * 按下开灯按钮：灯开；
