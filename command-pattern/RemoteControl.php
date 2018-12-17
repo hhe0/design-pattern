@@ -1,5 +1,5 @@
 <?php
-namespace remote;
+namespace remoteControl;
 
 /**
  * 遥控器类
