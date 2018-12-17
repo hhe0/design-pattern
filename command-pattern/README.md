@@ -11,4 +11,9 @@
 * 按下开灯按钮：灯开；
 * 按下关灯按钮：灯关。
 
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/command-pattern/DiningHall.php">DiningHall.php</a>
+* 餐厅有一个顾客；
+* 顾客招呼服务员点单；
+* 服务员让厨房厨师做菜。
+
 ### 总结与反思
