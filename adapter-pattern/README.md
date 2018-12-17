@@ -6,7 +6,7 @@
 
 ### 代码示例
 
-#### <a href="">MonkeyKing.php</a>
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/adapter-pattern/MonkeyKing.php">MonkeyKing.php</a>
 * 美猴王会七十二变，可以变成鸟，拥有鸟的行为。
 
 ### 总结与反思
