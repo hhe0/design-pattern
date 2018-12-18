@@ -1,7 +1,7 @@
 <?php
 namespace elephant;
 
-class ElephantIntoFridge
+class ElephantIntoFridgeFacade
 {
     public static function openFridge()
     {
