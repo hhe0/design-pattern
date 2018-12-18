@@ -3,6 +3,7 @@
 ### 行为型模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/strategy-pattern">策略模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/observer-pattern">观察者模式</a>
+* <a href="https://github.com/hhe0/design-pattern/tree/master/template-pattern">模板方法模式</a>
 * 访问者模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/command-pattern">命令模式</a>
 * 中介者模式
