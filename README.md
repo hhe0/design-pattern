@@ -16,7 +16,7 @@
 ### 结构型模式
 * 组合模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/decorator-pattern">装饰器模式</a>
-* 外观模式
+* <a href="https://github.com/hhe0/design-pattern/tree/master/facade-pattern">外观模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/adapter-pattern">适配器模式</a>
 * 桥接模式
 * 享元模式
