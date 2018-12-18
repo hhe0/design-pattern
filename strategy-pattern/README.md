@@ -3,7 +3,6 @@
 
 ### 解决问题
 * 一个行为如果被多个类所共有，如何减少代码重复和耦合？
-、、、、、、、、
 
 ### 代码示例
 #### <a href="https://github.com/hhe0/design-pattern/blob/master/strategy-pattern/Duck.php">Duck.php</a>
