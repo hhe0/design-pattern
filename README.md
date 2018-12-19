@@ -15,10 +15,11 @@
 * 建造者模式
 
 ### 结构型模式
-* 组合模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/decorator-pattern">装饰器模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/facade-pattern">外观模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/adapter-pattern">适配器模式</a>
+* 组合模式
+* 迭代器模式
 * 桥接模式
 * 享元模式
 * 代理模式
@@ -30,7 +31,8 @@
 * 类应该对扩展开放，对修改关闭；
 * 依赖抽象，不要依赖具体类；
 * 只和朋友交谈；
-* 别找我，我会找你。
+* 别找我，我会找你；
+* 类应该只有一个改变的理由。
 
 ## 运行
 * 在命令行下切换到相应的目录下输入命令，例如：`php Duck.php`，回车后即运行脚本。
