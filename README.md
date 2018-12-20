@@ -7,7 +7,7 @@
 * 访问者模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/command-pattern">命令模式</a>
 * 中介者模式
-* <a href="">状态模式</a>
+* <a href="https://github.com/hhe0/design-pattern/tree/master/status-pattern">状态模式</a>
 
 ### 创建型模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/singleton-pattern">单例模式</a>
