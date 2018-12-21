@@ -4,5 +4,7 @@
 ### 解决问题
 
 ### 代码示例
+#### <a href="https://github.com/hhe0/design-pattern/tree/master/iterator-pattern/MyIterator.php">MyIterator.php</a>
+* 官方手册提供的一个迭代器实例。
 
 ### 总结与反思
