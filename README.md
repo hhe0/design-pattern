@@ -22,7 +22,7 @@
 * <a href="https://github.com/hhe0/design-pattern/tree/master/iterator-pattern">迭代器模式</a>
 * 桥接模式
 * 享元模式
-* 代理模式
+* <a href="https://github.com/hhe0/design-pattern/tree/master/proxy-pattern">代理模式</a>
 
 ## 面向对象基本原则
 * 封装变化；
