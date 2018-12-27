@@ -26,7 +26,7 @@ class FoodShop extends Shop
 
     public function getName()
     {
-        echo 'It is a food shop.' . "\n";
+        echo 'It is a food shop.' . PHP_EOL;
     }
 }
 
@@ -47,7 +47,7 @@ class ClothesShop extends Shop
 
     public function getName()
     {
-        echo 'It is a clothes shop' . "\n";
+        echo 'It is a clothes shop' . PHP_EOL;
     }
 }
 
@@ -66,7 +66,7 @@ class Egg implements FoodProduct
 {
     public function eat()
     {
-        echo 'The egg is tasty.' . "\n";
+        echo 'The egg is tasty.' . PHP_EOL;
     }
 }
 
@@ -77,7 +77,7 @@ class Milk implements FoodProduct
 {
     public function eat()
     {
-        echo 'The milk is tasty.' . "\n";
+        echo 'The milk is tasty.' . PHP_EOL;
     }
 }
 
@@ -96,7 +96,7 @@ class Hat implements ClothesProduct
 {
     public function wear()
     {
-        echo 'It is a good hat.' . "\n";
+        echo 'It is a good hat.' . PHP_EOL;
     }
 }
 
@@ -107,7 +107,7 @@ class Shoes implements ClothesProduct
 {
     public function wear()
     {
-        echo 'They are good shoes.' . "\n";
+        echo 'They are good shoes.' . PHP_EOL;
     }
 }
 

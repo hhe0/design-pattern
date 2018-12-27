@@ -2,7 +2,7 @@
 namespace juicer;
 
 /**
- * 饮料机接口
+ * 饮料机接口：工厂方法模式
 */
 interface Juicer
 {
@@ -36,10 +36,7 @@ class GrapeJuicer implements Juicer
 */
 abstract class Juice
 {
-    public function getDescription()
-    {
-        echo 'I am a cup of juice.' . "\n";
-    }
+    public abstract function getDescription();
 }
 
 /**
@@ -49,7 +46,7 @@ class OrangeJuice extends Juice
 {
     public function getDescription()
     {
-        echo 'I am a cup of orange juice.' . "\n";
+        echo 'I am a cup of orange juice.' . PHP_EOL;
     }
 }
 
@@ -60,7 +57,7 @@ class GrapeJuice extends Juice
 {
     public function getDescription()
     {
-        echo 'I am a cup of grape juice.' . "\n";
+        echo 'I am a cup of grape juice.' . PHP_EOL;
     }
 }
 

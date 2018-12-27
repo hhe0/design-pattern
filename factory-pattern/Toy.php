@@ -2,7 +2,7 @@
 namespace toy;
 
 /**
- * 玩具工厂
+ * 玩具工厂：简单工厂模式
 */
 class ToyFactory
 {
@@ -45,7 +45,7 @@ class Transformer implements Toy
 {
     public function getDescription()
     {
-        echo 'I am a transformer.' . "\n";
+        echo 'I am a transformer.' . PHP_EOL;
     }
 }
 
@@ -56,7 +56,7 @@ class Barbie implements Toy
 {
     public function getDescription()
     {
-        echo 'I am a barbie.' . "\n";
+        echo 'I am a barbie.' . PHP_EOL;
     }
 }
 
@@ -67,7 +67,7 @@ class Wali implements Toy
 {
     public function getDescription()
     {
-        echo 'I am wali.' . "\n";
+        echo 'I am wali.' . PHP_EOL;
     }
 }
 
