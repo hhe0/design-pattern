@@ -10,7 +10,7 @@ class Circle implements Shape
 {
     public function show()
     {
-        echo 'circle.' . "\n";
+        echo 'circle.' . PHP_EOL;
     }
 }
 

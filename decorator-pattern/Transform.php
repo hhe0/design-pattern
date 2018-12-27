@@ -16,7 +16,7 @@ class Car implements Transform
 {
     public function move()
     {
-        echo 'Move like a car.' . "\n";
+        echo 'Move like a car.' . PHP_EOL;
     }
 }
 
@@ -43,14 +43,14 @@ class Robot extends Changer
 {
     public function move()
     {
-        echo 'Move like a robot.' . "\n";
+        echo 'Move like a robot.' . PHP_EOL;
 
         $this->transform->move();
     }
 
     public function say()
     {
-        echo 'Say like a robot.' . "\n";
+        echo 'Say like a robot.' . PHP_EOL;
     }
 }
 
@@ -61,14 +61,14 @@ class Airplane extends Changer
 {
     public function move()
     {
-        echo 'Move like a airplane.' . "\n";
+        echo 'Move like a airplane.' . PHP_EOL;
 
         $this->transform->move();
     }
 
     public function fly()
     {
-        echo 'Fly like a airplane' . "\n";
+        echo 'Fly like a airplane' . PHP_EOL;
     }
 }
 
