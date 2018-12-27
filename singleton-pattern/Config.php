@@ -7,10 +7,14 @@ namespace config;
 class Config
 {
     private static $instance;
+    private $config = [];
 
     // 将构造函数私有化
     private function __construct()
     {
+        if (is_file('.ini')) {
+            $this->config = parse_ini_file('.ini', true);
+        }
     }
 
     // 获得类的实例
@@ -23,6 +27,24 @@ class Config
 
         return self::$instance;
     }
+
+    // 获取配置项
+    public function getAll()
+    {
+        return $this->config;
+    }
+
+    // 判断是否存在配置项
+    public function has($name)
+    {
+        return $this->config[$name];
+    }
+
+    // 获取单个配置项
+    public function get($name)
+    {
+        return (is_string($name) && $this->has($name)) ? $this->config[$name] : null;
+    }
 }
 
 
@@ -32,3 +54,5 @@ var_dump($config);
 
 $config2 = Config::getInstance();
 var_dump($config2);
+var_dump($config->getAll());
+var_dump($config->get('user'));
