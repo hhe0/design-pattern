@@ -8,12 +8,12 @@ abstract class Bird
 {
     public function fly()
     {
-        echo 'I can fly.' . "\n";
+        echo 'I can fly.' . PHP_EOL;
     }
 
     public function sing()
     {
-        echo 'I like singing as a bird.' . "\n";
+        echo 'I like singing as a bird.' . PHP_EOL;
     }
 }
 
@@ -24,12 +24,12 @@ class MonkeyKing
 {
     public function roll()
     {
-        echo 'I can roll instead of flying.' . "\n";
+        echo 'I can roll instead of flying.' . PHP_EOL;
     }
 
     public function talk()
     {
-        echo 'I can talk instead of singing.' . "\n";
+        echo 'I can talk instead of singing.' . PHP_EOL;
     }
 }
 
@@ -47,14 +47,14 @@ class SeventyTwoChange extends bird
 
     public function fly()
     {
-        echo 'Now I can fly like a bird.' . "\n";
+        echo 'Now I can fly like a bird.' . PHP_EOL;
 
         $this->monkeyKing->roll();
     }
 
     public function sing()
     {
-        echo 'Now I can sing like a bird.' . "\n";
+        echo 'Now I can sing like a bird.' . PHP_EOL;
 
         $this->monkeyKing->talk();
     }
