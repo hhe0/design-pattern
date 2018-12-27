@@ -6,7 +6,8 @@
 
 ### 代码示例
 #### <a href="https://github.com/hhe0/design-pattern/blob/master/decorator-pattern/MilkTea.php">MilkTea.php</a>
-* 一杯奶茶可以加抹茶、珍珠、椰果，计算其价格。
+* 一杯奶茶可以加抹茶、珍珠、椰果，计算其价格、输出其描述；
+* 一杯加了抹茶的奶茶仍然是一杯奶茶，我们为其增加了新的行为，赋予了新的责任。
 
 #### <a href="https://github.com/hhe0/design-pattern/blob/master/decorator-pattern/Transform.php">Transform.php</a>
 * 汽车人可以变为机器人或者飞行器。

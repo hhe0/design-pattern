@@ -14,38 +14,38 @@ class Circle implements Shape
     }
 }
 
-abstract class ShapeDecorator implements Shape
+abstract class SizeDecorator implements Shape
 {
-    protected $shapeDecorator;
+    protected $sizeDecorator;
 
     public function __construct(Shape $shape)
     {
-        $this->shapeDecorator = $shape;
+        $this->sizeDecorator = $shape;
     }
 
     public function show()
     {
-        $this->shapeDecorator->show();
+        $this->sizeDecorator->show();
     }
 }
 
-class Large extends ShapeDecorator
+class Large extends SizeDecorator
 {
     public function show()
     {
         echo 'I am a big ';
 
-        $this->shapeDecorator->show();
+        $this->sizeDecorator->show();
     }
 }
 
-class Small extends ShapeDecorator
+class Small extends SizeDecorator
 {
     public function show()
     {
         echo 'I am a small ';
 
-        $this->shapeDecorator->show();
+        $this->sizeDecorator->show();
     }
 }
 

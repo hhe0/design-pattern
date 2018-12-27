@@ -7,6 +7,8 @@ namespace milkTea;
 interface MilkTea
 {
     public function getCost();
+
+    public function getDescription();
 }
 
 /**
@@ -17,6 +19,11 @@ class BasicMilkTea implements MilkTea
     public function getCost()
     {
         return 10;
+    }
+
+    public function getDescription()
+    {
+        echo 'A cup of basic milk tea.' . PHP_EOL;
     }
 }
 
@@ -36,6 +43,8 @@ abstract class Excipient implements MilkTea
     {
         $this->milkTea->getCost();
     }
+
+    public abstract function getDescription();
 }
 
 /**
@@ -46,6 +55,12 @@ class Matcha extends Excipient
     public function getCost()
     {
         return  $this->milkTea->getCost() + 3.0;
+    }
+
+    public function getDescription()
+    {
+        $this->milkTea->getDescription();
+        echo 'add some matcha.' . PHP_EOL;
     }
 }
 
@@ -58,6 +73,12 @@ class Pearl extends Excipient
     {
         return  $this->milkTea->getCost() + 1.5;
     }
+
+    public function getDescription()
+    {
+        $this->milkTea->getDescription();
+        echo 'add some pearl.' . PHP_EOL;
+    }
 }
 
 /**
@@ -69,15 +90,40 @@ class Coconut extends Excipient
     {
         return  $this->milkTea->getCost() + 1.0;
     }
+
+    public function getDescription()
+    {
+        $this->milkTea->getDescription();
+        echo 'add some coconut.' . PHP_EOL;
+    }
 }
 
+/**
+ * 注入灵魂
+*/
+class Soul extends Excipient
+{
+    public function getCost()
+    {
+        // 灵魂无价
+        return $this->milkTea->getCost() + 0.0;
+    }
+
+    public function getDescription()
+    {
+        $this->milkTea->getDescription();
+        echo 'add soul.' . PHP_EOL;
+    }
+}
 
 // 一杯基础款的奶茶 + 抹茶 + 珍珠
-$teaA = new Pearl(new Matcha(new BasicMilkTea()));
-$costA = $teaA->getCost();
-echo 'It costs: ' . $costA . "\n";
+$tea = new Coconut(new Pearl(new Matcha(new BasicMilkTea())));
+$tea->getDescription();
+$cost = $tea->getCost();
+echo 'It costs: ' . $cost . PHP_EOL;
 
-// 再加点椰果
-$teaB = new Coconut($teaA);
-$costB = $teaB->getCost();
-echo 'It costs: ' . $costB . "\n";
+// 如果只是这样，这杯奶茶是缺乏灵魂的
+$tea = new Soul($tea);
+$tea->getDescription();
+$cost = $tea->getCost();
+echo 'It costs: ' . $cost . PHP_EOL;
