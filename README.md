@@ -8,11 +8,15 @@
 * <a href="https://github.com/hhe0/design-pattern/tree/master/command-pattern">命令模式</a>
 * 中介者模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/status-pattern">状态模式</a>
+* 责任链模式
+* 备忘录模式
+* 解释器模式
 
 ### 创建型模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/singleton-pattern">单例模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/factory-pattern">工厂模式</a>
 * 建造者模式
+* 原型模式
 
 ### 结构型模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/decorator-pattern">装饰器模式</a>
