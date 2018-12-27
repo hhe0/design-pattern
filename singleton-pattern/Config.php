@@ -45,12 +45,21 @@ class Config
     {
         return (is_string($name) && $this->has($name)) ? $this->config[$name] : null;
     }
+
+    // 设置配置项
+    public function set($name, $value)
+    {
+        $this->config[$name] = $value;
+    }
 }
 
 
 // 两次获得的是同一个对象
 $config = Config::getInstance();
-var_dump($config);
+var_dump($config->getAll());
+// 一次设置全局生效
+$config->set('app', ['app_status' => 'test']);
+var_dump($config->getAll());
 
 $config2 = Config::getInstance();
 var_dump($config2);
