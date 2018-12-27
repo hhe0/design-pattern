@@ -9,7 +9,7 @@
 #### <a href="https://github.com/hhe0/design-pattern/blob/master/singleton-pattern/Config.php">Config.php</a>
 * 使用单例模式获取配置。
 
-#### <a href="">SingletonExtension.php</a>
+#### <a href="https://github.com/hhe0/design-pattern/blob/master/singleton-pattern/SingletonExtension.php">SingletonExtension.php</a>
 * 使用『多例模式』来获取配置。
 
 ### 总结与反思
