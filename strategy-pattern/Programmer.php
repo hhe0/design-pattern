@@ -31,7 +31,7 @@ class PhpProgramming implements ProgramBehavior
 {
     public function programming()
     {
-        echo 'PHP NO.1.' . "\n";
+        echo 'PHP NO.1.' . PHP_EOL;
     }
 }
 
@@ -47,7 +47,7 @@ class CProgramming implements ProgramBehavior
 {
     public function programming()
     {
-        echo 'C NO.1.' . "\n";
+        echo 'C NO.1.' . PHP_EOL;
     }
 }
 

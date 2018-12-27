@@ -33,7 +33,7 @@ class MuteQuack implements QuackBehavior
 {
     public function quack()
     {
-        echo 'Silence.' . "\n";
+        echo 'Silence.' . PHP_EOL;
     }
 }
 
@@ -41,7 +41,7 @@ class Squeak implements QuackBehavior
 {
     public function quack()
     {
-        echo 'Squeak.' . "\n";
+        echo 'Squeak.' . PHP_EOL;
     }
 }
 
@@ -54,7 +54,7 @@ class MullDuck extends Duck
 
     public function fly()
     {
-        echo 'MullDuck fly.' . "\n";
+        echo 'MullDuck fly.' . PHP_EOL;
     }
 }
 
@@ -67,7 +67,7 @@ class SqueakDuck extends Duck
 
     public function fly()
     {
-        echo 'SqueakDuck fly.' . "\n";
+        echo 'SqueakDuck fly.' . PHP_EOL;
     }
 }
 

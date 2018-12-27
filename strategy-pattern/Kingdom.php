@@ -47,7 +47,7 @@ class KnifeBehavior implements WeaponBehavior
 {
     public function fight()
     {
-        echo 'Fight with knife.' . "\n";
+        echo 'Fight with knife.' . PHP_EOL;
     }
 }
 
@@ -55,7 +55,7 @@ class BowAndArrowBehavior implements WeaponBehavior
 {
     public function fight()
     {
-        echo 'Fight with bow-and-arrow.' . "\n";
+        echo 'Fight with bow-and-arrow.' . PHP_EOL;
     }
 }
 
