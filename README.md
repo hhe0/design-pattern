@@ -2,7 +2,7 @@
 
 ### 设计模式
 #### 行为型模式
-* <a href="https://github.com/hhe0/design-pattern/tree/master/strategy-pattern">策略模式</a>
+* <a href="https://github.com/hhe0/design-pattern/tree/master/strategy-pattern">策略模式（Strategy Pattern）</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/observer-pattern">观察者模式</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/template-pattern">模板方法模式</a>
 * 访问者模式
@@ -30,12 +30,12 @@
 * <a href="https://github.com/hhe0/design-pattern/tree/master/proxy-pattern">代理模式</a>
 
 ### UML类图
-* 泛华关系(Generalization)：用来描述继承关系；
-* 实现关系(Realization)：用来实现一个接口；
-* 聚合关系(Aggregation)：表示整体由部分组成，但是整体和部分不是强依赖的，整体不存在了部分还是会存在；
-* 组合关系(Composition)：和聚合不同，组合中整体和部分是强依赖的，整体不存在了部分也不存在了；
-* 关联关系(Association)：表示不同类对象之间有关联，这是一种静态关系，与运行过程的状态无关，在最开始就可以确定；
-* 依赖关系(Dependency)：和关联不同，依赖关系是在运行过程中起作用的（A类是B类方法的局部变量、A类是B类方法当中的一个参数、A类向B类发送消息，从而影响B类发生变化）。
+* 泛化关系（Generalization）：用来描述继承关系；
+* 实现关系（Realization）：用来实现一个接口；
+* 聚合关系（Aggregation）：表示整体由部分组成，但是整体和部分不是强依赖的，整体不存在了部分还是会存在；
+* 组合关系（Composition）：和聚合不同，组合中整体和部分是强依赖的，整体不存在了部分也不存在了；
+* 关联关系（Association）：表示不同类对象之间有关联，这是一种静态关系，与运行过程的状态无关，在最开始就可以确定；
+* 依赖关系（Dependency）：和关联不同，依赖关系是在运行过程中起作用的（A类是B类方法的局部变量、A类是B类方法当中的一个参数、A类向B类发送消息，从而影响B类发生变化）。
 
 ### 面向对象三大特性
 #### 封装
@@ -91,8 +91,8 @@
 * 在命令行下切换到相应的目录下输入命令，例如：`php Duck.php`，回车后即运行脚本。
 
 ### 说明
-* 抽时间会为程序代码添加`UML类图`方便理解；
-* 如果代码中存在错误，或者有更好的方法实现，欢迎提出、理性交流。
+* 抽时间会为程序代码添加`UML类图`方便理解,每个设计模式示例的`UML类图`相似，将只给出一个用于说明问题；
+* 如果代码中存在错误，或者有更好的方法实现，欢迎提出、讨论交流。
 
 ### 参考资料
 * <a href="https://book.douban.com/subject/6559267/">《HeadFirst 设计模式》</a>
