@@ -3,7 +3,7 @@
 ### 设计模式
 #### 行为型模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/strategy-pattern">策略模式（Strategy Pattern）</a>
-* <a href="https://github.com/hhe0/design-pattern/tree/master/observer-pattern">观察者模式</a>
+* <a href="https://github.com/hhe0/design-pattern/tree/master/observer-pattern">观察者模式（Observer Pattern）</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/template-pattern">模板方法模式</a>
 * 访问者模式
 * <a href="https://github.com/hhe0/design-pattern/tree/master/command-pattern">命令模式</a>
@@ -14,7 +14,7 @@
 * 解释器模式
 
 #### 创建型模式
-* <a href="https://github.com/hhe0/design-pattern/tree/master/singleton-pattern">单例模式</a>
+* <a href="https://github.com/hhe0/design-pattern/tree/master/singleton-pattern">单例模式（Singleton Pattern）</a>
 * <a href="https://github.com/hhe0/design-pattern/tree/master/factory-pattern">工厂模式</a>
 * 建造者模式
 * 原型模式
