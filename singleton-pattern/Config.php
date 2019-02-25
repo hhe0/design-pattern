@@ -51,6 +51,12 @@ class Config
     {
         $this->config[$name] = $value;
     }
+
+    // 定义 clone 方法
+    public function __clone()
+    {
+        throw new \Exception('You can\'t clone a object in singleton pattern.');
+    }
 }
 
 
@@ -65,3 +71,9 @@ $config2 = Config::getInstance();
 var_dump($config2);
 var_dump($config->getAll());
 var_dump($config->get('user'));
+
+$config3 = $config2;
+var_dump($config3);
+
+$config4 = clone $config3;
+var_dump($config4);
