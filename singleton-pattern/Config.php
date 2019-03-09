@@ -31,7 +31,7 @@ class Config
     // 获取配置项
     public function getAll()
     {
-        return $this->config;
+        return $this->config;http://doub.pw/qr/qr.php?text=ssr://MjA3LjI0Ni4xMTYuMTg2OjIzMzM6YXV0aF9zaGExX3Y0OmFlcy0yNTYtY2ZiOnBsYWluOmFtbGhibWQ1ZFRVeU1B
     }
 
     // 判断是否存在配置项
@@ -54,7 +54,7 @@ class Config
 
     // 覆写 clone 方法
     public function __clone()
-    {   
+    {
         throw new \Exception('You can\'t clone a object in singleton pattern.');
     }
 }
