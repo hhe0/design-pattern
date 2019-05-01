@@ -1,4 +1,5 @@
 <?php
+
 namespace caffeineBeverage;
 
 abstract class CaffeineBeverage

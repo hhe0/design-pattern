@@ -1,4 +1,5 @@
 <?php
+
 namespace shape;
 
 interface Shape

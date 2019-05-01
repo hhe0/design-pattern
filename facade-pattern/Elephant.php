@@ -1,4 +1,5 @@
 <?php
+
 namespace elephant;
 
 class ElephantIntoFridgeFacade
@@ -31,10 +32,10 @@ class ElephantIntoFridgeFacade
 
 // 保留客户端对于原接口的访问
 // 把大象放到冰箱需要三步：打开冰箱、把大象塞到冰箱里、关上冰箱
-ElephantIntoFridge::openFridge();
-ElephantIntoFridge::IntoFridge();
-ElephantIntoFridge::closeFridge();
+ElephantIntoFridgeFacade::openFridge();
+ElephantIntoFridgeFacade::IntoFridge();
+ElephantIntoFridgeFacade::closeFridge();
 
 // 现在客户端可以更加方便的使用接口，隐藏了系统的复杂性
 // 现在把大象放到冰箱只需要一步！
-ElephantIntoFridge::putElephantIntoFridge();
+ElephantIntoFridgeFacade::putElephantIntoFridge();
